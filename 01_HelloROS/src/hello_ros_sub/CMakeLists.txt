@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(hello_ros)
+project(hello_ros_sub)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -7,21 +7,9 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
-
-add_executable(hello_ros_node src/hello_ros_node.cpp)
-
-ament_target_dependencies(
-  hello_ros_node
-  rclcpp
-  std_msgs
-)
-
-install(
-  TARGETS hello_ros_node
-  DESTINATION lib/${PROJECT_NAME}
-)
+# uncomment the following section in order to fill in
+# further dependencies manually.
+# find_package(<dependency> REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

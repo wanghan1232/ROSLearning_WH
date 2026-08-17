@@ -10,11 +10,11 @@ int main(int argc, char **argv)
 {
   rclcpp::init(argc, argv);
 
-  auto node = std::make_shared<rclcpp::Node>("hello_ros_node");
+  auto node = std::make_shared<rclcpp::Node>("hello_ros_pub_node");
 
   auto publisher =
     node->create_publisher<std_msgs::msg::String>(
-      "hello_ros_topic", 10);
+      "hello_ros_pub_topic", 10);
 
   auto timer = node->create_wall_timer(
     1000ms,
