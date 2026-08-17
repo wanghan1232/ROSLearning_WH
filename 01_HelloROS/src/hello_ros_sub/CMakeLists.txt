@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(robot_pose_msgs REQUIRED)
 
 add_executable(hello_ros_sub_node src/hello_ros_sub_node.cpp)
 
@@ -16,6 +17,7 @@ ament_target_dependencies(
   hello_ros_sub_node
   rclcpp
   std_msgs
+  robot_pose_msgs
 )
 
 install(

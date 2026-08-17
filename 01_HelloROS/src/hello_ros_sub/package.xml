@@ -17,5 +17,6 @@
 
   <depend>rclcpp</depend>
   <depend>std_msgs</depend> 
+  <depend>robot_pose_msgs</depend>
   </export>
 </package>

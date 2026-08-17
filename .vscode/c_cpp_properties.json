@@ -4,7 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/ros/humble/include/**"
+                "/opt/ros/humble/include/**",
+                "/home/han/mei/01_HelloROS/install/robot_pose_msgs/include/robot_pose_msgs",
+                "/home/han/mei/01_HelloROS/build/robot_pose_msgs/rosidl_generator_cpp"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
