@@ -1,0 +1,5 @@
+hello_yaml_node:
+  ros__parameters:
+    x: 1.0
+    y: 2.0
+    z: 5.0
